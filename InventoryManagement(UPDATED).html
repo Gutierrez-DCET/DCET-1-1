@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="sidebar">
+            <input type="text" id="search" placeholder="Search items...">
+            <h3>Filter by Type</h3>
+            <ul>
+                <li><input type="checkbox"> Electronics</li>
+                <li><input type="checkbox"> Furniture</li>
+                <li><input type="checkbox"> Clothing</li>
+                <li><input type="checkbox"> Books</li>
+                <li><input type="checkbox"> Toys</li>
+                <li><input type="checkbox"> Appliances</li>
+                <li><input type="checkbox"> Sports</li>
+                <li><input type="checkbox"> Beauty</li>
+            </ul>
+            <h3>Sort by</h3>
+            <select id="sortOption">
+                <option value="">Select...</option>
+                <option value="name">Name</option>
+                <option value="quantity">Quantity</option>
+                <option value="price">Price</option>
+            </select>
+            <div class="sort-direction">
+                <button>&#9650;</button>
+                <button>&#9660;</button>
+            </div>
+        </div>
+
+        <div class="main">
+            <h1>Inventory Management</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Details</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Type</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Inventory rows go here -->
+                </tbody>
+            </table>
+            <button class="add-btn">Add Item</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Wyclef Janssey Gutierrez. All Rights Reserved.
+    </div>
+</body>
+</html>
